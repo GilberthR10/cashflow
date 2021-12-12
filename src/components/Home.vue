@@ -45,7 +45,6 @@ const amounts = computed(() => {
       return m.time > oldDate;
     })
     .map((m) => m.amount);
-  console.log(lastDays, amount.value);
   return lastDays.map((m, i) => {
     const lastMovements = lastDays.slice(0, i + 1);
     return lastMovements.reduce((suma, movement) => suma + movement, 0);

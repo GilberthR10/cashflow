@@ -15,10 +15,11 @@ import SplashScreen from "@/components/SplashScreen.vue";
 import { defineAsyncComponent } from "vue";
 
 const Home = defineAsyncComponent(
-  () => new Promise(resolve => {
-    setTimeout(() => resolve(import("./components/Home.vue")), 2500)
-  })
-)
+  () =>
+    new Promise((resolve) => {
+      setTimeout(() => resolve(import("./components/Home.vue")), 2500);
+    })
+);
 </script>
 
 <style>
